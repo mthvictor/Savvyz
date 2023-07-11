@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Savvyz</title>
+		<link rel="stylesheet" href="/static/css/style.css" />
+		<link rel="icon" href="/static/images/favicon.ico" />
+		<script src="/static/js/main.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</head>
+	<body onload="onload()">
+		<label id="switch">
+			<input type="checkbox" onclick="darkmode()" />
+			<ion-icon name="sunny" class="sun"></ion-icon>
+			<ion-icon name="moon" class="moon"></ion-icon>
+			<span class="toggle"></span>
+		</label>
+		<div class="container">
+			<img src="/static/images/chart.png" alt="chart" class="chart" />
+			<div class="buttons">
+				<a
+					href="https://amazon.fr/dp/{{ product_id }}"
+					target="_blank"
+					class="buy-button"
+					>Buy on Amazon</a
+				>
+				<a href="/" class="go-back-button">Go Back</a>
+			</div>
+		</div>
+	</body>
+</html>
